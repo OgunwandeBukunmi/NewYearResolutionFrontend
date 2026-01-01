@@ -127,7 +127,7 @@ export default function NewYearResolutionGuide() {
     setLoading(true);
     setError(null)
     try {
-      const response = await fetch("http://nyrg-production.up.railway.app/api/generate", {
+      const response = await fetch("https://nyrg-production.up.railway.app/api/generate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
