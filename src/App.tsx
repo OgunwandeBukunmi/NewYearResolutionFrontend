@@ -98,7 +98,7 @@ export default function NewYearResolutionGuide() {
     setXloading(true)
     const base64Image = await exportToImage()
 
-    const res = await fetch("http://localhost:5000/api/share", {
+    const res = await fetch("https://nyrg-production.up.railway.app/api/share", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -127,7 +127,7 @@ export default function NewYearResolutionGuide() {
     setLoading(true);
     setError(null)
     try {
-      const response = await fetch("http://localhost:5000/api/generate", {
+      const response = await fetch("http://nyrg-production.up.railway.app/api/generate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
