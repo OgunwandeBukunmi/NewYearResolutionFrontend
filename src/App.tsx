@@ -224,7 +224,7 @@ export default function NewYearResolutionGuide() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="relative mt-10 max-w-3xl mx-auto p-4 "
+            className="relative mt-10 max-w-3xl mx-auto md:p-4 "
             ref={roadmapRef}
           >
             {/* Gradient Border */}
@@ -351,7 +351,7 @@ export default function NewYearResolutionGuide() {
                                 className="relative flex gap-6 p-6 rounded-2xl bg-white border border-slate-200 hover:shadow-lg transition-all"
                               >
                                 {/* Step Indicator */}
-                                <div className="relative z-10 w-10 h-10 flex items-center justify-center rounded-full bg-purple-500 text-white text-sm font-black shadow-md">
+                                <div className="relative p-2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-purple-500 text-white text-sm font-black shadow-md">
                                   {step.step}
                                 </div>
 
