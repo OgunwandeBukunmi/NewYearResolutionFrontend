@@ -351,7 +351,7 @@ export default function NewYearResolutionGuide() {
                                 className="relative flex gap-6 p-6 rounded-2xl bg-white border border-slate-200 hover:shadow-lg transition-all"
                               >
                                 {/* Step Indicator */}
-                                <div className="relative p-2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-purple-500 text-white text-sm font-black shadow-md">
+                                <div className="relative p-1 z-10 h-20 flex items-center justify-center rounded-full bg-purple-500 text-white text-sm font-black shadow-md">
                                   {step.step}
                                 </div>
 
