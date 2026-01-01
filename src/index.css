@@ -1,8 +1,7 @@
 @import "tailwindcss";
 
-* {
-    overflow-x: hidden;
-}
+
+
 
 .pdf-export * {
     background-image: none !important;

@@ -98,7 +98,7 @@ export default function NewYearResolutionGuide() {
     setXloading(true)
     const base64Image = await exportToImage()
 
-    const res = await fetch("https://nyrg-production.up.railway.app/api/share", {
+    const res = await fetch("http://localhost:5000/api/share", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -127,7 +127,7 @@ export default function NewYearResolutionGuide() {
     setLoading(true);
     setError(null)
     try {
-      const response = await fetch("https://nyrg-production.up.railway.app/api/generate", {
+      const response = await fetch("http://localhost:5000/api/generate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -212,7 +212,7 @@ export default function NewYearResolutionGuide() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="relative mt-10 max-w-3xl mx-auto p-8 "
+            className="relative mt-10 max-w-3xl mx-auto md:p-4 "
           >
             <p className="text-red-500 text-center">{error} Wait a few minutes</p>
           </motion.div>
@@ -224,13 +224,13 @@ export default function NewYearResolutionGuide() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="relative mt-10 max-w-3xl mx-auto p-1 md:p-4 "
+            className="relative mt-10 max-w-3xl mx-auto p-4 "
             ref={roadmapRef}
           >
             {/* Gradient Border */}
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-500/20 to-purple-500/20 blur-xl" />
 
-            <div className="relative p-2 md:p-4 rounded-3xl bg-white/90 backdrop-blur border border-slate-200 shadow-2xl">
+            <div className="relative p-4 md:p-10 rounded-3xl bg-white/90 backdrop-blur border border-slate-200 shadow-2xl">
 
               {/* Header */}
               <div
@@ -351,7 +351,7 @@ export default function NewYearResolutionGuide() {
                                 className="relative flex gap-6 p-6 rounded-2xl bg-white border border-slate-200 hover:shadow-lg transition-all"
                               >
                                 {/* Step Indicator */}
-                                <div className="relative p-2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-purple-500 text-white text-sm font-black shadow-md">
+                                <div className="relative z-10 w-10 h-10 flex items-center justify-center rounded-full bg-purple-500 text-white text-sm font-black shadow-md">
                                   {step.step}
                                 </div>
 
