@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+.pdf-export * {
+    background-image: none !important;
+    box-shadow: none !important;
+    filter: none !important;
+}
+
+.pdf-export .bg-gradient-to-br,
+.pdf-export .bg-gradient-to-r {
+    background: #ffffff !important;
+}
