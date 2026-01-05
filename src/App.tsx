@@ -190,8 +190,7 @@ export default function NewYearResolutionGuide() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
         >
-          <input
-            type="text"
+          <textarea
             placeholder="Share your goal or ask for advice..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
